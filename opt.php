@@ -2,7 +2,6 @@
     $name = $_POST['name'];
     $class = $_POST['class'];
     $num = $_POST['number'];
-    $gen = $_POST['gender'];
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +22,7 @@
                 <p class="mb-4">
                     เพศ - 
                     <?php
+                    $gen = $_POST['gender'];
                         switch ($gen) {
                             case 1:
                                 echo "ชาย";
